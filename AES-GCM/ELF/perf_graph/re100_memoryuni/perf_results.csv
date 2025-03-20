@@ -1,0 +1,61 @@
+FileSizeKB,ExecName,TaskClock,TaskClock_StdDev,Cycles,Cycles_StdDev,PageFaults,PageFaults_StdDev,CpuClock,CpuClock_StdDev
+1,ulimit -v 8388608; taskset -c 0-3 ./aes_gcm_x86,4.8889,1.4084,3124927.7500,786363.0727,310.5300,2.1929,4.8847,1.4077
+1,ulimit -v 8388608; taskset -c 0-3 ./aes_gcm_avx2,5.0861,1.3604,3221423.8100,784094.6594,310.6400,2.2339,5.0816,1.3605
+1,taskset -c 0-3 spike --isa=rv64gcv_zve32x_vlen=256 -m8192 --disable-dtb --rbb-port=0 --log-commits=0 ./aes_gcm_riscv,7.4278,1.6187,3321113.3300,664420.3677,419.4200,2.6913,7.4236,1.6181
+1,taskset -c 0-3 spike --isa=rv64gcv_zve32x_vlen=256 -m8192 --disable-dtb --rbb-port=0 --log-commits=0 ./aes_gcm_riscv_v,7.5166,1.3967,3100408.0800,716349.2403,419.3200,2.2973,7.5114,1.3975
+2,ulimit -v 8388608; taskset -c 0-3 ./aes_gcm_x86,4.9121,1.5374,3187592.8700,674854.0123,310.9200,2.0033,4.9081,1.5381
+2,ulimit -v 8388608; taskset -c 0-3 ./aes_gcm_avx2,4.7694,1.5682,3110701.1100,793049.7166,310.4400,2.2992,4.7646,1.5687
+2,taskset -c 0-3 spike --isa=rv64gcv_zve32x_vlen=256 -m8192 --disable-dtb --rbb-port=0 --log-commits=0 ./aes_gcm_riscv,6.7325,1.9697,3327903.1700,907558.9997,419.6500,2.3806,6.7287,1.9692
+2,taskset -c 0-3 spike --isa=rv64gcv_zve32x_vlen=256 -m8192 --disable-dtb --rbb-port=0 --log-commits=0 ./aes_gcm_riscv_v,7.5776,1.3355,3222784.4000,741897.4987,419.5300,2.2691,7.5741,1.3361
+4,ulimit -v 8388608; taskset -c 0-3 ./aes_gcm_x86,4.8250,1.6004,3271920.9300,724082.4165,310.2700,1.7824,4.8203,1.6002
+4,ulimit -v 8388608; taskset -c 0-3 ./aes_gcm_avx2,5.2780,1.2164,3304352.4500,638969.7669,310.3100,2.4563,5.2727,1.2164
+4,taskset -c 0-3 spike --isa=rv64gcv_zve32x_vlen=256 -m8192 --disable-dtb --rbb-port=0 --log-commits=0 ./aes_gcm_riscv,7.6078,1.7211,3178228.8000,717061.1265,418.9600,2.4245,7.6039,1.7214
+4,taskset -c 0-3 spike --isa=rv64gcv_zve32x_vlen=256 -m8192 --disable-dtb --rbb-port=0 --log-commits=0 ./aes_gcm_riscv_v,7.2757,1.7684,3331549.4300,727530.7692,419.0900,2.4580,7.2709,1.7684
+8,ulimit -v 8388608; taskset -c 0-3 ./aes_gcm_x86,4.6522,1.6184,3246086.9900,799141.7166,310.3100,2.2480,4.6478,1.6183
+8,ulimit -v 8388608; taskset -c 0-3 ./aes_gcm_avx2,5.2717,1.2412,3229871.4500,717984.1175,310.4300,2.2237,5.2674,1.2416
+8,taskset -c 0-3 spike --isa=rv64gcv_zve32x_vlen=256 -m8192 --disable-dtb --rbb-port=0 --log-commits=0 ./aes_gcm_riscv,7.5919,1.3649,3250023.6900,672880.6975,419.2200,2.3090,7.5888,1.3648
+8,taskset -c 0-3 spike --isa=rv64gcv_zve32x_vlen=256 -m8192 --disable-dtb --rbb-port=0 --log-commits=0 ./aes_gcm_riscv_v,7.1052,1.6113,3241533.6600,809124.3578,419.1600,2.2032,7.1006,1.6116
+16,ulimit -v 8388608; taskset -c 0-3 ./aes_gcm_x86,5.0013,1.4879,3229843.7500,791743.1468,310.6200,2.1390,4.9968,1.4874
+16,ulimit -v 8388608; taskset -c 0-3 ./aes_gcm_avx2,5.2355,1.3036,3174557.4300,807205.3779,310.4100,2.0837,5.2316,1.3037
+16,taskset -c 0-3 spike --isa=rv64gcv_zve32x_vlen=256 -m8192 --disable-dtb --rbb-port=0 --log-commits=0 ./aes_gcm_riscv,7.3351,1.6306,3179058.1200,656795.1428,419.0900,2.4742,7.3303,1.6301
+16,taskset -c 0-3 spike --isa=rv64gcv_zve32x_vlen=256 -m8192 --disable-dtb --rbb-port=0 --log-commits=0 ./aes_gcm_riscv_v,7.2513,1.8370,3306349.6300,713364.5225,419.4100,2.0692,7.2468,1.8368
+32,ulimit -v 8388608; taskset -c 0-3 ./aes_gcm_x86,4.9579,1.3531,3097392.2000,885776.7316,310.2100,2.2329,4.9532,1.3538
+32,ulimit -v 8388608; taskset -c 0-3 ./aes_gcm_avx2,4.9501,1.4078,3005749.3500,735333.1073,310.4200,2.1362,4.9466,1.4077
+32,taskset -c 0-3 spike --isa=rv64gcv_zve32x_vlen=256 -m8192 --disable-dtb --rbb-port=0 --log-commits=0 ./aes_gcm_riscv,7.0491,1.7396,3194495.6500,791567.2639,419.2700,2.2709,7.0453,1.7406
+32,taskset -c 0-3 spike --isa=rv64gcv_zve32x_vlen=256 -m8192 --disable-dtb --rbb-port=0 --log-commits=0 ./aes_gcm_riscv_v,7.4987,1.6141,3178636.9000,773560.7067,419.0600,2.4446,7.4945,1.6142
+64,ulimit -v 8388608; taskset -c 0-3 ./aes_gcm_x86,4.9132,1.4639,3329161.5000,791476.2549,310.4700,2.3556,4.9080,1.4642
+64,ulimit -v 8388608; taskset -c 0-3 ./aes_gcm_avx2,4.8099,1.6175,3191755.3800,892740.1434,310.4400,2.1086,4.8058,1.6191
+64,taskset -c 0-3 spike --isa=rv64gcv_zve32x_vlen=256 -m8192 --disable-dtb --rbb-port=0 --log-commits=0 ./aes_gcm_riscv,7.5157,1.4928,3237913.6000,721531.9893,419.3400,2.1364,7.5117,1.4922
+64,taskset -c 0-3 spike --isa=rv64gcv_zve32x_vlen=256 -m8192 --disable-dtb --rbb-port=0 --log-commits=0 ./aes_gcm_riscv_v,7.0263,1.7440,3108047.0100,781432.9527,418.9600,2.4245,7.0222,1.7439
+128,ulimit -v 8388608; taskset -c 0-3 ./aes_gcm_x86,5.0052,1.3744,3033790.0000,825350.7123,310.5100,2.0223,5.0001,1.3738
+128,ulimit -v 8388608; taskset -c 0-3 ./aes_gcm_avx2,4.9099,1.3358,3015844.0100,758594.3120,310.8900,1.9436,4.9053,1.3358
+128,taskset -c 0-3 spike --isa=rv64gcv_zve32x_vlen=256 -m8192 --disable-dtb --rbb-port=0 --log-commits=0 ./aes_gcm_riscv,7.1943,1.5908,3228206.9900,785148.4104,419.3100,2.6445,7.1893,1.5907
+128,taskset -c 0-3 spike --isa=rv64gcv_zve32x_vlen=256 -m8192 --disable-dtb --rbb-port=0 --log-commits=0 ./aes_gcm_riscv_v,7.0668,1.9283,3285781.2400,721623.9259,419.5400,2.0708,7.0621,1.9281
+256,ulimit -v 8388608; taskset -c 0-3 ./aes_gcm_x86,4.9227,1.4036,3139398.5100,745123.1828,310.6300,1.8849,4.9184,1.4036
+256,ulimit -v 8388608; taskset -c 0-3 ./aes_gcm_avx2,5.0214,1.4680,3230242.3200,709666.7260,310.3400,2.1918,5.0169,1.4679
+256,taskset -c 0-3 spike --isa=rv64gcv_zve32x_vlen=256 -m8192 --disable-dtb --rbb-port=0 --log-commits=0 ./aes_gcm_riscv,7.4985,1.4723,3186933.9600,759764.9089,419.3500,2.4305,7.4946,1.4722
+256,taskset -c 0-3 spike --isa=rv64gcv_zve32x_vlen=256 -m8192 --disable-dtb --rbb-port=0 --log-commits=0 ./aes_gcm_riscv_v,7.5519,1.3153,3256414.7900,739248.7223,419.5000,2.4020,7.5479,1.3156
+512,ulimit -v 8388608; taskset -c 0-3 ./aes_gcm_x86,5.1735,1.1535,3096806.2000,726893.6011,310.5800,2.2234,5.1698,1.1539
+512,ulimit -v 8388608; taskset -c 0-3 ./aes_gcm_avx2,5.0913,1.2779,3024486.0700,791938.6127,310.5500,2.2152,5.0866,1.2774
+512,taskset -c 0-3 spike --isa=rv64gcv_zve32x_vlen=256 -m8192 --disable-dtb --rbb-port=0 --log-commits=0 ./aes_gcm_riscv,7.6195,1.4506,3297594.0800,637683.9241,419.3000,2.4474,7.6142,1.4515
+512,taskset -c 0-3 spike --isa=rv64gcv_zve32x_vlen=256 -m8192 --disable-dtb --rbb-port=0 --log-commits=0 ./aes_gcm_riscv_v,7.5423,1.4744,3296415.2400,719536.8607,419.2700,2.5410,7.5374,1.4741
+1024,ulimit -v 8388608; taskset -c 0-3 ./aes_gcm_x86,5.0445,1.5489,3159652.2600,710296.3942,310.3300,2.0496,5.0407,1.5491
+1024,ulimit -v 8388608; taskset -c 0-3 ./aes_gcm_avx2,5.2024,1.2915,3188952.1000,755575.7031,310.2900,2.1693,5.1985,1.2912
+1024,taskset -c 0-3 spike --isa=rv64gcv_zve32x_vlen=256 -m8192 --disable-dtb --rbb-port=0 --log-commits=0 ./aes_gcm_riscv,7.0204,1.9143,3268414.3900,700482.1607,419.1200,2.3506,7.0157,1.9149
+1024,taskset -c 0-3 spike --isa=rv64gcv_zve32x_vlen=256 -m8192 --disable-dtb --rbb-port=0 --log-commits=0 ./aes_gcm_riscv_v,7.3303,1.5305,3169307.8700,762252.5384,419.2600,2.6062,7.3249,1.5302
+2048,ulimit -v 8388608; taskset -c 0-3 ./aes_gcm_x86,4.8611,1.5671,3251740.5300,689436.6721,310.1200,2.1738,4.8562,1.5663
+2048,ulimit -v 8388608; taskset -c 0-3 ./aes_gcm_avx2,5.3208,1.1643,3340813.8100,674053.1574,310.3900,2.3659,5.3158,1.1638
+2048,taskset -c 0-3 spike --isa=rv64gcv_zve32x_vlen=256 -m8192 --disable-dtb --rbb-port=0 --log-commits=0 ./aes_gcm_riscv,7.3735,1.8871,3478696.4000,1148122.9593,419.3400,2.4133,7.3688,1.8879
+2048,taskset -c 0-3 spike --isa=rv64gcv_zve32x_vlen=256 -m8192 --disable-dtb --rbb-port=0 --log-commits=0 ./aes_gcm_riscv_v,7.0364,1.7271,3136683.7700,780553.0646,419.1000,2.3430,7.0319,1.7273
+4096,ulimit -v 8388608; taskset -c 0-3 ./aes_gcm_x86,4.7494,1.7059,3202557.5000,811104.6364,310.8000,2.0784,4.7440,1.7059
+4096,ulimit -v 8388608; taskset -c 0-3 ./aes_gcm_avx2,5.2051,1.2513,3179836.3500,827123.1006,310.2900,2.3507,5.2008,1.2511
+4096,taskset -c 0-3 spike --isa=rv64gcv_zve32x_vlen=256 -m8192 --disable-dtb --rbb-port=0 --log-commits=0 ./aes_gcm_riscv,7.0322,1.7417,3160313.2900,778349.5314,419.5600,2.4670,7.0279,1.7426
+4096,taskset -c 0-3 spike --isa=rv64gcv_zve32x_vlen=256 -m8192 --disable-dtb --rbb-port=0 --log-commits=0 ./aes_gcm_riscv_v,7.0723,1.8319,3252768.9800,751988.8955,418.9200,2.1756,7.0687,1.8318
+8192,ulimit -v 8388608; taskset -c 0-3 ./aes_gcm_x86,5.2080,1.3639,3331985.5200,638230.8529,310.5000,2.3895,5.2041,1.3641
+8192,ulimit -v 8388608; taskset -c 0-3 ./aes_gcm_avx2,4.9344,1.4355,3185257.6000,701457.3272,310.5000,2.0566,4.9303,1.4352
+8192,taskset -c 0-3 spike --isa=rv64gcv_zve32x_vlen=256 -m8192 --disable-dtb --rbb-port=0 --log-commits=0 ./aes_gcm_riscv,7.3606,1.6379,3214072.2700,661150.2771,419.3800,2.2126,7.3568,1.6375
+8192,taskset -c 0-3 spike --isa=rv64gcv_zve32x_vlen=256 -m8192 --disable-dtb --rbb-port=0 --log-commits=0 ./aes_gcm_riscv_v,7.3889,1.5159,3074476.1700,806655.8025,419.2000,2.1954,7.3843,1.5165
+10240,ulimit -v 8388608; taskset -c 0-3 ./aes_gcm_x86,5.0810,1.4561,3220406.3300,599679.1148,310.4800,2.4227,5.0768,1.4558
+10240,ulimit -v 8388608; taskset -c 0-3 ./aes_gcm_avx2,4.9167,1.5202,3310746.9900,770605.4617,310.6400,1.9053,4.9127,1.5195
+10240,taskset -c 0-3 spike --isa=rv64gcv_zve32x_vlen=256 -m8192 --disable-dtb --rbb-port=0 --log-commits=0 ./aes_gcm_riscv,7.5211,1.4706,3207462.7200,756668.2689,419.5100,2.2293,7.5169,1.4703
+10240,taskset -c 0-3 spike --isa=rv64gcv_zve32x_vlen=256 -m8192 --disable-dtb --rbb-port=0 --log-commits=0 ./aes_gcm_riscv_v,7.2362,1.8637,3357873.2900,897395.7021,419.0700,2.3162,7.2314,1.8633

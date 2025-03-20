@@ -1,0 +1,91 @@
+FileSizeKB,ExecName,VLEN,TaskClock,Cycles,PageFaults,CpuClock
+1,./b3_x86,N/A,2.5296,2971273.9800,263.5000,2.5256
+1,./b3_avx2,N/A,3.4974,3335438.9200,265.0400,3.4926
+1,spike -m8192 --isa=rv64gcv --disable-dtb --rbb-port=0 --log-commits=0 ./b3_riscv,N/A,5.9968,4353136.9200,360.9600,5.9920
+1,spike --isa=rv64gcv_zve32x_vlen=256 -m8192 --disable-dtb --rbb-port=0 --log-commits=0 ./b3_riscv_v,256,6.1380,4250886.8400,359.7200,6.1316
+1,spike --isa=rv64gcv_zve32x_vlen=512 -m8192 --disable-dtb --rbb-port=0 --log-commits=0 ./b3_riscv_v,512,4.2534,4738077.2800,360.0400,4.2484
+1,spike --isa=rv64gcv_zve32x_vlen=1024 -m8192 --disable-dtb --rbb-port=0 --log-commits=0 ./b3_riscv_v,1024,1.9338,5286899.0000,360.1400,1.9290
+2,./b3_x86,N/A,1.2982,3462233.2800,264.8600,1.2942
+2,./b3_avx2,N/A,1.1796,3563341.0600,265.2400,1.1760
+2,spike -m8192 --isa=rv64gcv --disable-dtb --rbb-port=0 --log-commits=0 ./b3_riscv,N/A,4.8282,4348744.7200,360.6800,4.8226
+2,spike --isa=rv64gcv_zve32x_vlen=256 -m8192 --disable-dtb --rbb-port=0 --log-commits=0 ./b3_riscv_v,256,5.9332,4190349.1800,359.8600,5.9284
+2,spike --isa=rv64gcv_zve32x_vlen=512 -m8192 --disable-dtb --rbb-port=0 --log-commits=0 ./b3_riscv_v,512,6.3326,4311935.9800,359.4000,6.3270
+2,spike --isa=rv64gcv_zve32x_vlen=1024 -m8192 --disable-dtb --rbb-port=0 --log-commits=0 ./b3_riscv_v,1024,5.4020,4295720.3000,360.2200,5.3954
+4,./b3_x86,N/A,3.9748,3101918.8600,264.4400,3.9692
+4,./b3_avx2,N/A,3.4416,3105431.6200,265.5800,3.4360
+4,spike -m8192 --isa=rv64gcv --disable-dtb --rbb-port=0 --log-commits=0 ./b3_riscv,N/A,4.1034,4815276.9000,361.1000,4.0970
+4,spike --isa=rv64gcv_zve32x_vlen=256 -m8192 --disable-dtb --rbb-port=0 --log-commits=0 ./b3_riscv_v,256,2.0222,5364245.2200,359.4600,2.0182
+4,spike --isa=rv64gcv_zve32x_vlen=512 -m8192 --disable-dtb --rbb-port=0 --log-commits=0 ./b3_riscv_v,512,2.2524,5126110.8400,360.7600,2.2480
+4,spike --isa=rv64gcv_zve32x_vlen=1024 -m8192 --disable-dtb --rbb-port=0 --log-commits=0 ./b3_riscv_v,1024,3.4814,4869961.9200,359.2800,3.4772
+8,./b3_x86,N/A,3.7388,3039185.3000,265.1200,3.7340
+8,./b3_avx2,N/A,2.7396,3203904.0000,265.5800,2.7362
+8,spike -m8192 --isa=rv64gcv --disable-dtb --rbb-port=0 --log-commits=0 ./b3_riscv,N/A,6.0266,4094481.1400,361.1600,6.0210
+8,spike --isa=rv64gcv_zve32x_vlen=256 -m8192 --disable-dtb --rbb-port=0 --log-commits=0 ./b3_riscv_v,256,6.3244,4538975.1800,359.7000,6.3180
+8,spike --isa=rv64gcv_zve32x_vlen=512 -m8192 --disable-dtb --rbb-port=0 --log-commits=0 ./b3_riscv_v,512,5.9158,4342218.9400,359.7800,5.9110
+8,spike --isa=rv64gcv_zve32x_vlen=1024 -m8192 --disable-dtb --rbb-port=0 --log-commits=0 ./b3_riscv_v,1024,6.2218,3560423.4400,359.8600,6.2160
+16,./b3_x86,N/A,3.4740,2968863.4000,265.5400,3.4698
+16,./b3_avx2,N/A,1.5260,3540728.1800,265.5000,1.5206
+16,spike -m8192 --isa=rv64gcv --disable-dtb --rbb-port=0 --log-commits=0 ./b3_riscv,N/A,6.1896,4163670.2400,360.5800,6.1840
+16,spike --isa=rv64gcv_zve32x_vlen=256 -m8192 --disable-dtb --rbb-port=0 --log-commits=0 ./b3_riscv_v,256,2.5026,5151050.9000,360.6200,2.4984
+16,spike --isa=rv64gcv_zve32x_vlen=512 -m8192 --disable-dtb --rbb-port=0 --log-commits=0 ./b3_riscv_v,512,2.1988,5397903.9200,359.8800,2.1942
+16,spike --isa=rv64gcv_zve32x_vlen=1024 -m8192 --disable-dtb --rbb-port=0 --log-commits=0 ./b3_riscv_v,1024,5.4960,4461840.5600,359.5600,5.4906
+32,./b3_x86,N/A,3.8188,3108303.9000,265.9000,3.8144
+32,./b3_avx2,N/A,3.8990,3248526.4000,265.5600,3.8934
+32,spike -m8192 --isa=rv64gcv --disable-dtb --rbb-port=0 --log-commits=0 ./b3_riscv,N/A,6.0224,4040370.5200,360.3200,6.0154
+32,spike --isa=rv64gcv_zve32x_vlen=256 -m8192 --disable-dtb --rbb-port=0 --log-commits=0 ./b3_riscv_v,256,6.1006,4289981.9000,359.7800,6.0954
+32,spike --isa=rv64gcv_zve32x_vlen=512 -m8192 --disable-dtb --rbb-port=0 --log-commits=0 ./b3_riscv_v,512,6.6150,4179753.1000,359.8400,6.6092
+32,spike --isa=rv64gcv_zve32x_vlen=1024 -m8192 --disable-dtb --rbb-port=0 --log-commits=0 ./b3_riscv_v,1024,6.1562,4783817.7200,359.9000,6.1502
+64,./b3_x86,N/A,3.2486,3390280.4400,266.2000,3.2428
+64,./b3_avx2,N/A,3.7380,3165725.8000,266.6200,3.7334
+64,spike -m8192 --isa=rv64gcv --disable-dtb --rbb-port=0 --log-commits=0 ./b3_riscv,N/A,5.9318,4468255.7600,361.2800,5.9256
+64,spike --isa=rv64gcv_zve32x_vlen=256 -m8192 --disable-dtb --rbb-port=0 --log-commits=0 ./b3_riscv_v,256,5.9248,3989052.8400,360.1800,5.9196
+64,spike --isa=rv64gcv_zve32x_vlen=512 -m8192 --disable-dtb --rbb-port=0 --log-commits=0 ./b3_riscv_v,512,6.0040,3968439.9200,359.6800,5.9968
+64,spike --isa=rv64gcv_zve32x_vlen=1024 -m8192 --disable-dtb --rbb-port=0 --log-commits=0 ./b3_riscv_v,1024,5.7560,3632694.1600,359.8000,5.7492
+128,./b3_x86,N/A,3.8472,3570343.8200,266.3800,3.8412
+128,./b3_avx2,N/A,1.6386,3694624.9600,266.3200,1.6348
+128,spike -m8192 --isa=rv64gcv --disable-dtb --rbb-port=0 --log-commits=0 ./b3_riscv,N/A,2.1602,5127559.7400,360.8000,2.1550
+128,spike --isa=rv64gcv_zve32x_vlen=256 -m8192 --disable-dtb --rbb-port=0 --log-commits=0 ./b3_riscv_v,256,1.7108,5406270.9800,360.3000,1.7046
+128,spike --isa=rv64gcv_zve32x_vlen=512 -m8192 --disable-dtb --rbb-port=0 --log-commits=0 ./b3_riscv_v,512,5.0592,4838249.9400,359.7400,5.0534
+128,spike --isa=rv64gcv_zve32x_vlen=1024 -m8192 --disable-dtb --rbb-port=0 --log-commits=0 ./b3_riscv_v,1024,5.9614,4147282.8200,359.6000,5.9572
+256,./b3_x86,N/A,4.9384,3653155.0000,266.4400,4.9318
+256,./b3_avx2,N/A,4.0964,3394962.1000,266.3000,4.0916
+256,spike -m8192 --isa=rv64gcv --disable-dtb --rbb-port=0 --log-commits=0 ./b3_riscv,N/A,6.4694,4176871.8400,360.9000,6.4630
+256,spike --isa=rv64gcv_zve32x_vlen=256 -m8192 --disable-dtb --rbb-port=0 --log-commits=0 ./b3_riscv_v,256,6.2720,3712883.9400,359.7600,6.2656
+256,spike --isa=rv64gcv_zve32x_vlen=512 -m8192 --disable-dtb --rbb-port=0 --log-commits=0 ./b3_riscv_v,512,3.3418,4993590.1600,359.8800,3.3374
+256,spike --isa=rv64gcv_zve32x_vlen=1024 -m8192 --disable-dtb --rbb-port=0 --log-commits=0 ./b3_riscv_v,1024,2.1466,5160613.9400,359.9000,2.1420
+512,./b3_x86,N/A,3.3304,5400792.0000,266.3200,3.3254
+512,./b3_avx2,N/A,3.9952,3427037.7200,266.4200,3.9894
+512,spike -m8192 --isa=rv64gcv --disable-dtb --rbb-port=0 --log-commits=0 ./b3_riscv,N/A,4.8948,4249668.3600,360.5800,4.8888
+512,spike --isa=rv64gcv_zve32x_vlen=256 -m8192 --disable-dtb --rbb-port=0 --log-commits=0 ./b3_riscv_v,256,6.3688,4371014.7600,359.2400,6.3636
+512,spike --isa=rv64gcv_zve32x_vlen=512 -m8192 --disable-dtb --rbb-port=0 --log-commits=0 ./b3_riscv_v,512,6.0182,4170995.1800,359.9400,6.0124
+512,spike --isa=rv64gcv_zve32x_vlen=1024 -m8192 --disable-dtb --rbb-port=0 --log-commits=0 ./b3_riscv_v,1024,5.9040,4375790.9600,359.2600,5.8992
+1024,./b3_x86,N/A,9.8294,5227833.5600,266.6600,9.8218
+1024,./b3_avx2,N/A,4.7756,3791834.6600,266.5600,4.7698
+1024,spike -m8192 --isa=rv64gcv --disable-dtb --rbb-port=0 --log-commits=0 ./b3_riscv,N/A,5.2406,4096452.6800,360.8400,5.2348
+1024,spike --isa=rv64gcv_zve32x_vlen=256 -m8192 --disable-dtb --rbb-port=0 --log-commits=0 ./b3_riscv_v,256,3.1534,5129099.0600,360.2000,3.1486
+1024,spike --isa=rv64gcv_zve32x_vlen=512 -m8192 --disable-dtb --rbb-port=0 --log-commits=0 ./b3_riscv_v,512,5.3014,4227755.1400,359.3200,5.2952
+1024,spike --isa=rv64gcv_zve32x_vlen=1024 -m8192 --disable-dtb --rbb-port=0 --log-commits=0 ./b3_riscv_v,1024,6.1076,4477285.5400,359.8200,6.1024
+2048,./b3_x86,N/A,14.8132,6777271.5800,266.4000,14.8044
+2048,./b3_avx2,N/A,7.1220,5018192.1400,266.1800,7.1152
+2048,spike -m8192 --isa=rv64gcv --disable-dtb --rbb-port=0 --log-commits=0 ./b3_riscv,N/A,6.1104,4207957.9800,361.1400,6.1052
+2048,spike --isa=rv64gcv_zve32x_vlen=256 -m8192 --disable-dtb --rbb-port=0 --log-commits=0 ./b3_riscv_v,256,5.8668,4205601.0400,360.0000,5.8608
+2048,spike --isa=rv64gcv_zve32x_vlen=512 -m8192 --disable-dtb --rbb-port=0 --log-commits=0 ./b3_riscv_v,512,6.0050,4328851.5000,359.9000,5.9994
+2048,spike --isa=rv64gcv_zve32x_vlen=1024 -m8192 --disable-dtb --rbb-port=0 --log-commits=0 ./b3_riscv_v,1024,5.8082,4147125.8600,360.0000,5.8024
+4096,./b3_x86,N/A,20.5038,5717822.4000,266.1800,20.4938
+4096,./b3_avx2,N/A,10.7410,5591863.3400,266.2000,10.7330
+4096,spike -m8192 --isa=rv64gcv --disable-dtb --rbb-port=0 --log-commits=0 ./b3_riscv,N/A,6.0722,4145179.0800,361.2400,6.0662
+4096,spike --isa=rv64gcv_zve32x_vlen=256 -m8192 --disable-dtb --rbb-port=0 --log-commits=0 ./b3_riscv_v,256,6.3328,4581428.8800,359.6800,6.3264
+4096,spike --isa=rv64gcv_zve32x_vlen=512 -m8192 --disable-dtb --rbb-port=0 --log-commits=0 ./b3_riscv_v,512,6.0774,3948297.3200,359.6200,6.0712
+4096,spike --isa=rv64gcv_zve32x_vlen=1024 -m8192 --disable-dtb --rbb-port=0 --log-commits=0 ./b3_riscv_v,1024,5.3634,4371695.5200,360.0400,5.3580
+8192,./b3_x86,N/A,21.0820,12902439.6400,266.8400,21.0734
+8192,./b3_avx2,N/A,4.6474,11253514.7800,266.1800,4.6424
+8192,spike -m8192 --isa=rv64gcv --disable-dtb --rbb-port=0 --log-commits=0 ./b3_riscv,N/A,1.8640,4940127.4800,360.3800,1.8590
+8192,spike --isa=rv64gcv_zve32x_vlen=256 -m8192 --disable-dtb --rbb-port=0 --log-commits=0 ./b3_riscv_v,256,3.5044,5307399.2200,360.1800,3.4980
+8192,spike --isa=rv64gcv_zve32x_vlen=512 -m8192 --disable-dtb --rbb-port=0 --log-commits=0 ./b3_riscv_v,512,6.3640,4324763.0200,359.9000,6.3592
+8192,spike --isa=rv64gcv_zve32x_vlen=1024 -m8192 --disable-dtb --rbb-port=0 --log-commits=0 ./b3_riscv_v,1024,6.0264,4272269.5400,359.8800,6.0212
+10240,./b3_x86,N/A,29.3806,5921348.8000,266.4000,29.3676
+10240,./b3_avx2,N/A,16.1974,5907557.4800,266.2400,16.1892
+10240,spike -m8192 --isa=rv64gcv --disable-dtb --rbb-port=0 --log-commits=0 ./b3_riscv,N/A,5.7626,4620510.1200,361.0800,5.7570
+10240,spike --isa=rv64gcv_zve32x_vlen=256 -m8192 --disable-dtb --rbb-port=0 --log-commits=0 ./b3_riscv_v,256,5.6880,4396038.2400,359.8000,5.6814
+10240,spike --isa=rv64gcv_zve32x_vlen=512 -m8192 --disable-dtb --rbb-port=0 --log-commits=0 ./b3_riscv_v,512,2.4700,5022296.2000,359.7200,2.4646
+10240,spike --isa=rv64gcv_zve32x_vlen=1024 -m8192 --disable-dtb --rbb-port=0 --log-commits=0 ./b3_riscv_v,1024,2.0572,5660795.9800,360.0800,2.0534
