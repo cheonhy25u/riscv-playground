@@ -12,15 +12,13 @@ executables=(
   "ulimit -v $((8 * 1024 * 1024)); taskset -c 0-3 ./aes_gcm_avx2"
   "taskset -c 0-3 spike --isa=rv64gcv_zve32x -m8192 ./aes_gcm_riscv"
   "taskset -c 0-3 spike --isa=rv64gcv_zve32x_vlen=256 -m8192 ./aes_gcm_riscv_v"
-  "taskset -c 0-3 spike --isa=rv64gcv_zve32x_vlen=512 -m8192 ./aes_gcm_riscv_v"
-  "taskset -c 0-3 spike --isa=rv64gcv_zve32x_vlen=1024 -m8192 ./aes_gcm_riscv_v"
 )
 
 output_csv="perf_results.csv"
 echo "FileSizeKB,ExecName,VLEN,TaskClock,TaskClock_StdDev,Cycles,Cycles_StdDev,PageFaults,PageFaults_StdDev,CpuClock,CpuClock_StdDev" > "${output_csv}"
 
 for size in "${sizes[@]}"; do
-  file="datafile/test_${size}KB.txt"
+  file="../../datafile/test_${size}KB.txt"
   [ ! -f "$file" ] && echo "⚠️ File $file does not exist. Skipping." && continue
   echo "🔹 Testing file $file (${size} KB = $((size/1024)) MB)..."
 
